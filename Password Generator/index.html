@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="copied">
+            Copied!
+        </div>
+        <div class="app">
+            <div class="heading">
+                <h1>PASSWORD GENERATOR</h1>
+            </div>
+            <div id="generate" class="password">
+                <div id="pass">Password</div>
+                <i id="cop" class="cop fa fa-copy"></i>
+                
+            </div>
+
+            <div class="setpass">
+                <div class="val">
+                    <label for="points">
+                        <h3>Password Length</h3>
+                    </label>
+                    <h3 id="value">value</h3>
+                </div>
+                <input type="range" id="points" name="points" min="0" max="16" />
+                <div class="checkbox">
+                    <input type="checkbox" id="box1" name="box1" value="box1" />
+                    <label for="box1" class="b4"> Include Uppercase Letters</label><br />
+                    <input type="checkbox" id="box2" name="box2" value="box2" />
+                    <label for="box2" class="b4"> Include Lowercase Letters</label><br />
+                    <input type="checkbox" id="box3" name="box3" value="box3" />
+                    <label for="box3" class="b4"> Include Numbers</label><br />
+                    <input type="checkbox" id="box4" name="box4" value="box4" />
+                    <label for="box4" class="b4"> Include Symbols</label><br />
+                </div>
+                <div class="strength">
+                    <h2>Strength</h2>
+                    <div class="col"></div>
+                </div>
+                <input type="submit" id="sub" onclick="pw()" value="Generate Password" />
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

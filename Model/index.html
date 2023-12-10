@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="ball" id="ball1"></div>
+      <div id="content" class="box">
+        <div>
+          <img src="IMG_20230221_201057.jpg" alt="my-image" />
+        </div>
+
+        <div class="user-name">
+          <h2>Rajnish Puri</h2>
+        </div>
+        <div class="designation">
+          <h3>Developer, Learner</h3>
+        </div>
+        <div class="btn-group">
+          <button onclick="openModal()" class="btn-share btn-card">
+            <i class="fa fa-share-alt"></i>
+            <div>Share My Profile</div>
+          </button>
+          <button class="btn-follow btn-card">Follow Me</button>
+        </div>
+      </div>
+      <div class="ball" id="ball2"></div>
+      <!-- Model App -->
+      <div class="model">
+        <div class="upper">
+          <h1>Share My Profile</h1>
+          <i class="fa fa-close" onclick="closeModal()" style="font-size: 36px"></i>
+        </div>
+        <hr />
+        <div class="lower">
+          <h3>Share This Via</h3>
+          <div class="icons">
+            <a href="#" class="fa fa-facebook" id="f"></a>
+            <a href="#" class="fa fa-twitter" id="tw"></a>
+            <a href="#" class="fa fa-instagram" id="in"></a>
+            <a href="#" class="fa fa-whatsapp" id="wh"></a>
+            <a href="#" class="fa fa-telegram" id="te"></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" onclick="closeModal()"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

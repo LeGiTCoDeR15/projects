@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-sec{
+    display: flex;
+    background-color: aqua;
+}
+
+#minus{
+    width: 3vw;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    
+}
+
+.count{
+    width: 3vw;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-collapse:collapse;
+}
+
+#plus{
+    width: 3vw;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+}
